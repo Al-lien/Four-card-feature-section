@@ -1,0 +1,186 @@
+/*import fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/*style-guide value*/
+
+:root {
+    /*COLORS - PRIMARY*/
+    --clr-red: hsl(0, 78%, 62%);
+    --clr-cyan: hsl(180, 62%, 55%);
+    --clr-orange: hsl(34, 97%, 64%);
+    --clr-blue: hsl(212, 86%, 64%);
+    /*COLORS - NEUTRAL*/    
+    --clr-very_dark_blue: hsl(234, 12%, 34%);
+    --clr-grayish_blue: hsl(229, 6%, 66%);
+    --clr-very_light_gray: hsl(0, 0%, 98%);
+    /* TYPOGRAPHY */
+    --fs-body: 15px;
+    --ff-primary: 'Poppins', sans-serif;
+    --fw-200: 200; /* thin */
+    --fw-400: 400; /* medium */
+    --fw-600: 600; /* bold */
+    /*BORDERS*/
+    --border-radius: 0.5rem;
+    /*BOX-SHADOWS*/
+}
+
+/* CSS RESET */
+* {    
+  box-sizing: border-box;   
+  margin: 0;    
+  padding: 0; 
+}
+
+body {
+    /* Body fit 100% of the html*/
+    min-height: 100vh;
+    margin: 0;
+    overflow: auto;
+
+    /* Center div in body*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Set default font */
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-200);
+    line-height: 1;
+
+
+}
+
+/* Disable default margin */
+h1, h2, h3, p {
+    margin: 0;
+    color: var(--clr-grayish_blue);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+main {
+    width: 68rem;
+    height: 47rem;
+}
+header {
+    height: 25%;
+    padding: 0 16rem;
+}
+
+header > h1, h2, p {
+    text-align: center;
+    margin: 1rem;
+}
+
+header h1 {
+    color: var(--clr-very_dark_blue);
+    font-weight: var(--fw-200); 
+}
+
+header h2 {
+    color: var(--clr-very_dark_blue);
+    font-weight: var(--fw-600);
+    font-size: 1.9rem;
+}
+
+.cards {
+    width: inherit;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards_section {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tools {
+    width: 100%;
+    height: 15rem;
+    padding: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.25rem 0.25rem 0.5rem 0.5rem;
+    box-shadow: hsl(216, 78%, 66%, 0.2) 0px 20px 25px -5px, hsla(216, 78%, 66%, 0.04) 0px 10px 10px -5px;
+}
+
+.tools h3 {
+    color: var(--clr-very_dark_blue);
+}
+
+.tools p {
+    text-align: left;
+    font-weight: var(--fw-200);
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+
+.icon {
+    text-align: right;
+}
+
+#supervisor {
+    border-top: 4px solid var(--clr-cyan);
+}
+#team_builder {
+    border-top: 4px solid var(--clr-red);
+}
+#karma {
+    border-top: 4px solid var(--clr-orange);
+    margin-top: 1.9rem;
+}
+#calculator {
+    border-top: 4px solid var(--clr-blue);
+}
+
+@media only screen and (max-width: 1105px) {
+
+
+    main {
+        width: 355px;
+        height: auto;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 1.65rem;
+    }
+
+    header h2 {
+        font-size: 1.65rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
